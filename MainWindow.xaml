@@ -1,0 +1,49 @@
+﻿<Window x:Class="MatrixSumAndMultiple.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatrixSumAndMultiple"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.492,0.492">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.05*"/>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="0.05*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.05*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.05*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="Size" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,5" FontSize="16"/>
+        <TextBox x:Name="sizeInit" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Margin="45,0,0,0"/>
+        <TextBlock Grid.Column="2" Grid.Row="1" Text="Operation" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,5" FontSize="16"/>
+        <ComboBox Grid.Column="2" Grid.Row="1" Margin="95, 9, 295, 9" Grid.ColumnSpan="2" FontSize="14">
+            <ComboBoxItem IsSelected="True">
+                <TextBlock Text="Summ"/>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock Text="Multiple"/>
+            </ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="Clear" Content="Clear Values" Grid.Column="3" Grid.Row="1" Margin="30,20,30,0" Click="clearAndGenerate"/>
+        <Button x:Name="Random" Content="Random Values" Grid.Column="3" Grid.Row="1" Margin="30,0,30,20" Click="RandomValues"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="Left Matrix:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+        <TextBlock Grid.Column="2" Grid.Row="2" Text="Right Matrix:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+        <TextBlock Grid.Column="3" Grid.Row="2" Text="Result Matrix:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+        <TextBlock Grid.Column="2" Grid.Row="4" Text="Time:" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" Margin="30,0,30,0"/>
+        <TextBlock x:Name="timeOutput" Grid.Column="2" Grid.Row="4" Text="-" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Margin="30,0,30,0"/>
+        <Button x:Name="Result" Content="Calculate" Grid.Column="1" Grid.Row="4" Margin="30,9,30,9" Click="ResultValues"/>
+        <UniformGrid Name="LeftMatrix"  HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="3"/>
+        <UniformGrid Name="RightMatrix"  HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="2" Grid.Row="3"/>
+        <UniformGrid Name="ResultMatrix"  HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="3" Grid.Row="3"/>
+    </Grid>
+</Window>

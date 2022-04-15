@@ -1,0 +1,15 @@
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.csprojAssemblyReference.cache
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MainWindow.g.cs
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\App.g.cs
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple_MarkupCompile.cache
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple_MarkupCompile.lref
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\bin\Debug\MatrixSumAndMultiple.exe.config
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\bin\Debug\MatrixSumAndMultiple.exe
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\bin\Debug\MatrixSumAndMultiple.pdb
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MainWindow.baml
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.g.resources
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.Properties.Resources.resources
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.csproj.GenerateResource.cache
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.csproj.CoreCompileInputs.cache
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.exe
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.pdb
