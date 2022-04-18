@@ -1,5 +1,11 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,33 +20,28 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace MatrixSumAndMultiple
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private TextBox[,] leftMatrix, rightMatrix;
-        private int? matrixSizeNow = null;
+        private int matrixSizeNow;
+        private Matrix<int> result;
         public MainWindow()
         {
             InitializeComponent();
         }
 
 
-        private void clearAndGenerate(object sender, RoutedEventArgs e)
+        private void btnClearAndGenerate(object sender, RoutedEventArgs e)
         {
-            /*if  (sizeInit.Text != String.Empty || (int.Parse(sizeInit.Text) > 1 ))
-            {
-            }
-            else
-            { MessageBox.Show("Введите пожалуйста размер матрицы", "Ошибка."); } */
+
             leftMatrix = GenerateGrid(LeftMatrix, int.Parse(sizeInit.Text));
             rightMatrix = GenerateGrid(RightMatrix, int.Parse(sizeInit.Text));
         }
 
-        private TextBox[,] GenerateGrid(UniformGrid Grid, int size)
+        private TextBox[,] GenerateGrid(UniformGrid Grid, int size) 
         {
             matrixSizeNow = size;
             TextBox[,] result = new TextBox[size, size];
@@ -61,31 +62,69 @@ namespace MatrixSumAndMultiple
             return result;
         }
 
-        private void RandomValues(object sender, RoutedEventArgs e)
+        private void btnRandomValues(object sender, RoutedEventArgs e)
         {
-            RandomValuesMatrix(leftMatrix);
-            RandomValuesMatrix(rightMatrix);
+            randomValuesMatrix(leftMatrix);
+            randomValuesMatrix(rightMatrix);
         }
 
-        private void RandomValuesMatrix(TextBox[,] textBoxes)
+        private void randomValuesMatrix(TextBox[,] textBoxes)
         {
-            if(matrixSizeNow != null)
+            Random rand = new Random(DateTime.Now.Second + DateTime.Now.Millisecond);
+            foreach (TextBox item in textBoxes)
             {
-                Random rand = new Random(DateTime.Now.Second + DateTime.Now.Millisecond);
-                foreach (TextBox item in textBoxes)
+                item.Text = rand.Next(0, 10).ToString();
+            }
+        }
+
+
+        private void btnResultValues(object sender, RoutedEventArgs e)
+        {
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+            Matrix<int> matrixLeft = new Matrix<int>(matrixSizeNow, matrixSizeNow);
+            Matrix<int> matrixRight = new Matrix<int>(matrixSizeNow, matrixSizeNow);
+            for (int i = 0; i < matrixSizeNow; i++)
+            {
+                for (int j = 0; j < matrixSizeNow; j++)
                 {
-                    item.Text = rand.Next(0, 10).ToString();
+                    matrixLeft[i, j] = int.Parse(leftMatrix[i, j].Text);
+                    matrixRight[i, j] = int.Parse(rightMatrix[i, j].Text);
                 }
             }
-            
+            if (operationType.SelectedIndex == 0) result = matrixLeft + matrixRight;
+            else result = matrixLeft * matrixRight;
+            stopwatch.Stop();
+            timeOutput.Text = stopwatch.Elapsed.TotalSeconds.ToString();
+            TextBox[,] resultFields = GenerateGrid(ResultMatrix, matrixSizeNow);
+            for (int i = 0; i < matrixSizeNow; i++)
+                for (int j = 0; j < matrixSizeNow; j++)
+                    resultFields[i, j].Text = result[i, j].ToString();
         }
 
-
-        private void ResultValues(object sender, RoutedEventArgs e)
+        private void btnPrintToCSV(object sender, RoutedEventArgs e)
         {
-
+            string path = GetPathFile();
+            if (path != null) result.SaveToCSV(path);
         }
+        public string GetPathFile()
+        {
+            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
+            dlg.FileName = "Result"; // Default file name
+            dlg.DefaultExt = ".csv"; // Default file extension
+            dlg.Filter = "CSV Table (.csv)|*.csv"; // Filter files by extension
 
+            // Show save file dialog box
+            Nullable<bool> result = dlg.ShowDialog();
+
+            // Process save file dialog box results
+            if (result == true)
+            {
+                // Save document
+                return dlg.FileName;
+            }
+            else return null;
+        }
 
     }
 }

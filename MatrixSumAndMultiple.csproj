@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="MatrixClasses\MatrixClasses.csproj">
+      <Project>{fea40ab2-2764-44a5-be90-5976b85fd650}</Project>
+      <Name>MatrixClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -26,7 +26,7 @@
         <TextBlock Grid.Column="1" Grid.Row="1" Text="Size" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,5" FontSize="16"/>
         <TextBox x:Name="sizeInit" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Margin="45,0,0,0"/>
         <TextBlock Grid.Column="2" Grid.Row="1" Text="Operation" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,5" FontSize="16"/>
-        <ComboBox Grid.Column="2" Grid.Row="1" Margin="95, 9, 295, 9" Grid.ColumnSpan="2" FontSize="14">
+        <ComboBox Name="operationType"  Grid.Column="2" Grid.Row="1" Margin="95, 9, 295, 9" Grid.ColumnSpan="2" FontSize="14">
             <ComboBoxItem IsSelected="True">
                 <TextBlock Text="Summ"/>
             </ComboBoxItem>
@@ -34,14 +34,15 @@
                 <TextBlock Text="Multiple"/>
             </ComboBoxItem>
         </ComboBox>
-        <Button x:Name="Clear" Content="Clear Values" Grid.Column="3" Grid.Row="1" Margin="30,20,30,0" Click="clearAndGenerate"/>
-        <Button x:Name="Random" Content="Random Values" Grid.Column="3" Grid.Row="1" Margin="30,0,30,20" Click="RandomValues"/>
+        <Button x:Name="Clear" Content="Clear Values" Grid.Column="3" Grid.Row="1" Margin="30,20,30,0" Click="btnClearAndGenerate"/>
+        <Button x:Name="Random" Content="Random Values" Grid.Column="3" Grid.Row="1" Margin="30,0,30,20" Click="btnRandomValues"/>
         <TextBlock Grid.Column="1" Grid.Row="2" Text="Left Matrix:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
         <TextBlock Grid.Column="2" Grid.Row="2" Text="Right Matrix:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
         <TextBlock Grid.Column="3" Grid.Row="2" Text="Result Matrix:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
         <TextBlock Grid.Column="2" Grid.Row="4" Text="Time:" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" Margin="30,0,30,0"/>
         <TextBlock x:Name="timeOutput" Grid.Column="2" Grid.Row="4" Text="-" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Margin="30,0,30,0"/>
-        <Button x:Name="Result" Content="Calculate" Grid.Column="1" Grid.Row="4" Margin="30,9,30,9" Click="ResultValues"/>
+        <Button x:Name="Result" Content="Calculate" Grid.Column="1" Grid.Row="4" Margin="30,9,30,9" Click="btnResultValues"/>
+        <Button x:Name="PrintCsv" Content="SaveCSV" Grid.Column="1" Grid.Row="5" Margin="30,9,30,9" Click="btnPrintToCSV"/>
         <UniformGrid Name="LeftMatrix"  HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="3"/>
         <UniformGrid Name="RightMatrix"  HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="2" Grid.Row="3"/>
         <UniformGrid Name="ResultMatrix"  HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="3" Grid.Row="3"/>

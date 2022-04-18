@@ -13,3 +13,6 @@ C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.
 C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.csproj.CoreCompileInputs.cache
 C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.exe
 C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.pdb
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\bin\Debug\MatrixClasses.dll
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\bin\Debug\MatrixClasses.pdb
+C:\Users\ifigu\source\repos\MatrixSumAndMultiple\obj\Debug\MatrixSumAndMultiple.csproj.CopyComplete
