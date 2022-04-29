@@ -92,16 +92,10 @@ namespace MatrixSumAndMultiple
                     matrixRight[i, j] = int.Parse(rightMatrix[i, j].Text);
                 }
             }
-            if (parBtn.IsChecked == true)
-            {
-                if (operationType.SelectedIndex == 0) result = matrixLeft + matrixRight;
-                else result = matrixLeft * matrixRight;
-            }
-            else
-            {
-                if (operationType.SelectedIndex == 0) result = matrixLeft + matrixRight;
-                else result = matrixLeft * matrixRight;
-            }
+          
+            if (operationType.SelectedIndex == 0) result = matrixLeft + matrixRight;
+            else result = matrixLeft * matrixRight;
+            
             stopwatch.Stop();
             timeOutput.Text = stopwatch.Elapsed.TotalSeconds.ToString();
             TextBox[,] resultFields = GenerateGrid(ResultMatrix, matrixSizeNow);

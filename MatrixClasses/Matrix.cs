@@ -11,9 +11,8 @@ public class Matrix<T>
 
     public T this[int i, int j]
     {
-        get => Get(i, j);
-        set => Set(i, j, value);
-
+        get => data[i,j];
+        set => data[i, j] = value;
     }
 
 
@@ -38,7 +37,7 @@ public class Matrix<T>
         }
     }
 
-    public void Set(int i, int j, T element)
+    /* public void Set(int i, int j, T element)
     {
         data[i, j] = element;
     }
@@ -46,7 +45,7 @@ public class Matrix<T>
     public T Get(int i, int j)
     {
         return data[i, j];
-    }
+    } */
 
     public void SaveToCSV(string pathName)
     {
