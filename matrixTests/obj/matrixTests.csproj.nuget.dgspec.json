@@ -1,0 +1,125 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\rep_git\\MatrixSumMultiple\\matrixTests\\matrixTests.csproj": {}
+  },
+  "projects": {
+    "E:\\rep_git\\MatrixSumMultiple\\MatrixClasses\\MatrixClasses.csproj": {
+      "restore": {
+        "projectUniqueName": "E:\\rep_git\\MatrixSumMultiple\\MatrixClasses\\MatrixClasses.csproj",
+        "projectName": "MatrixClasses",
+        "projectPath": "E:\\rep_git\\MatrixSumMultiple\\MatrixClasses\\MatrixClasses.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "E:\\rep_git\\MatrixSumMultiple\\MatrixSumAndMultiple.csproj": {
+      "restore": {
+        "projectUniqueName": "E:\\rep_git\\MatrixSumMultiple\\MatrixSumAndMultiple.csproj",
+        "projectName": "MatrixSumAndMultiple",
+        "projectPath": "E:\\rep_git\\MatrixSumMultiple\\MatrixSumAndMultiple.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "E:\\rep_git\\MatrixSumMultiple\\MatrixClasses\\MatrixClasses.csproj": {
+                "projectPath": "E:\\rep_git\\MatrixSumMultiple\\MatrixClasses\\MatrixClasses.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "E:\\rep_git\\MatrixSumMultiple\\matrixTests\\matrixTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\rep_git\\MatrixSumMultiple\\matrixTests\\matrixTests.csproj",
+        "projectName": "matrixTests",
+        "projectPath": "E:\\rep_git\\MatrixSumMultiple\\matrixTests\\matrixTests.csproj",
+        "packagesPath": "C:\\Users\\Игореха\\.nuget\\packages\\",
+        "outputPath": "E:\\rep_git\\MatrixSumMultiple\\matrixTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Игореха\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\rep_git\\MatrixSumMultiple\\MatrixClasses\\MatrixClasses.csproj": {
+                "projectPath": "E:\\rep_git\\MatrixSumMultiple\\MatrixClasses\\MatrixClasses.csproj"
+              },
+              "E:\\rep_git\\MatrixSumMultiple\\MatrixSumAndMultiple.csproj": {
+                "projectPath": "E:\\rep_git\\MatrixSumMultiple\\MatrixSumAndMultiple.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

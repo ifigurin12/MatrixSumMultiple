@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixSumAndMultiple", "Mat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixClasses", "MatrixClasses\MatrixClasses.csproj", "{FEA40AB2-2764-44A5-BE90-5976B85FD650}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrixTests", "..\matrixTests\matrixTests.csproj", "{22552922-C935-412F-BC45-3486A4FF159A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matrixTests", "matrixTests\matrixTests.csproj", "{914DC190-22EE-41B3-BBB1-AC43B6B3E347}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{FEA40AB2-2764-44A5-BE90-5976B85FD650}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEA40AB2-2764-44A5-BE90-5976B85FD650}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEA40AB2-2764-44A5-BE90-5976B85FD650}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22552922-C935-412F-BC45-3486A4FF159A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22552922-C935-412F-BC45-3486A4FF159A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22552922-C935-412F-BC45-3486A4FF159A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22552922-C935-412F-BC45-3486A4FF159A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914DC190-22EE-41B3-BBB1-AC43B6B3E347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914DC190-22EE-41B3-BBB1-AC43B6B3E347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914DC190-22EE-41B3-BBB1-AC43B6B3E347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914DC190-22EE-41B3-BBB1-AC43B6B3E347}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
