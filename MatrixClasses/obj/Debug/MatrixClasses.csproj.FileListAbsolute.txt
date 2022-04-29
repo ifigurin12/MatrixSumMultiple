@@ -4,3 +4,9 @@ C:\Users\ifigu\source\repos\MatrixSumAndMultiple\MatrixClasses\obj\Debug\MatrixC
 C:\Users\ifigu\source\repos\MatrixSumAndMultiple\MatrixClasses\obj\Debug\MatrixClasses.csproj.CoreCompileInputs.cache
 C:\Users\ifigu\source\repos\MatrixSumAndMultiple\MatrixClasses\obj\Debug\MatrixClasses.dll
 C:\Users\ifigu\source\repos\MatrixSumAndMultiple\MatrixClasses\obj\Debug\MatrixClasses.pdb
+E:\rep_git\MatrixSumMultiple\MatrixClasses\bin\Debug\MatrixClasses.dll
+E:\rep_git\MatrixSumMultiple\MatrixClasses\bin\Debug\MatrixClasses.pdb
+E:\rep_git\MatrixSumMultiple\MatrixClasses\obj\Debug\MatrixClasses.csproj.AssemblyReference.cache
+E:\rep_git\MatrixSumMultiple\MatrixClasses\obj\Debug\MatrixClasses.csproj.CoreCompileInputs.cache
+E:\rep_git\MatrixSumMultiple\MatrixClasses\obj\Debug\MatrixClasses.dll
+E:\rep_git\MatrixSumMultiple\MatrixClasses\obj\Debug\MatrixClasses.pdb
