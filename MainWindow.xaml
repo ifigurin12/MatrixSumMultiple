@@ -46,5 +46,6 @@
         <UniformGrid Name="LeftMatrix"  HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="3"/>
         <UniformGrid Name="RightMatrix"  HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="2" Grid.Row="3"/>
         <UniformGrid Name="ResultMatrix"  HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="3" Grid.Row="3"/>
+        <RadioButton GroupName="Languages" Content="C#" IsChecked="True" />
     </Grid>
 </Window>

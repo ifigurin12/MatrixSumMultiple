@@ -11,14 +11,9 @@ public class Matrix<T>
 
     public T this[int i, int j]
     {
-        get
-        {
-            return Get(i, j);
-        }
-        set
-        {
-            Set(i, j, value);
-        }
+        get => Get(i, j);
+        set => Set(i, j, value);
+
     }
 
 

@@ -92,8 +92,16 @@ namespace MatrixSumAndMultiple
                     matrixRight[i, j] = int.Parse(rightMatrix[i, j].Text);
                 }
             }
-            if (operationType.SelectedIndex == 0) result = matrixLeft + matrixRight;
-            else result = matrixLeft * matrixRight;
+            if (parBtn.IsChecked == true)
+            {
+                if (operationType.SelectedIndex == 0) result = matrixLeft + matrixRight;
+                else result = matrixLeft * matrixRight;
+            }
+            else
+            {
+                if (operationType.SelectedIndex == 0) result = matrixLeft + matrixRight;
+                else result = matrixLeft * matrixRight;
+            }
             stopwatch.Stop();
             timeOutput.Text = stopwatch.Elapsed.TotalSeconds.ToString();
             TextBox[,] resultFields = GenerateGrid(ResultMatrix, matrixSizeNow);
@@ -106,7 +114,7 @@ namespace MatrixSumAndMultiple
         {
             string path = GetPathFile();
             if (path != null) result.SaveToCSV(path);
-        }
+        }  
         public string GetPathFile()
         {
             Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
@@ -124,6 +132,11 @@ namespace MatrixSumAndMultiple
                 return dlg.FileName;
             }
             else return null;
+        }
+
+        private void parralelRadioBtn(object sender, RoutedEventArgs e)
+        {
+           
         }
 
     }
